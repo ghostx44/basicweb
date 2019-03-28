@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <main class="main-container">
+        
+        <header class="container">
+            <div class="header-wrapper">
+                <h1>HTML + CSS + Javascript</h1>
+            </div>
+        </header>
+    
+        <nav class="container">
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a>
+                        <ul class="navigation-dropdown">
+                            <li><a href="#">2.1</a></li>
+                            <li><a href="#">2.2</a></li>
+                            <li><a href="#">2.3</a>
+                                <ul class="navigation-dropdown navigation-right">
+                                    <li><a href="#">2.3.1</a></li>
+                                    <li><a href="#">2.3.2</a></li>
+                                    <li><a href="#">2.3.3</a>
+                                        <ul class="navigation-dropdown navigation-right">
+                                            <li><a href="#">2.3.3.1</a></li>
+                                            <li><a href="#">2.3.3.2</a></li>
+                                            <li><a href="#">2.3.3.3</a></li>
+                                            <li><a href="#">2.3.3.4</a>
+                                                <ul class="navigation-dropdown navigation-right">
+                                                    <li><a href="#">2.3.3.4.1</a></li>
+                                                    <li><a href="#">2.3.3.4.2</a></li>
+                                                    <li><a href="#">2.3.3.4.3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">2.3.4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section class="container">
+            <div class="slider-wrapper">
+                <img class="img-slider" src="img/img1.jpg" style="width: 100%">
+                <img class="img-slider" src="img/img2.jpg" style="width: 100%">
+                <img class="img-slider" src="img/img3.jpg" style="width: 100%">
+            </div>
+            
+            <div class="btn-wrapper">
+                <div class="btn-np">
+                    <button class="btn-des" onclick="moveImg(-1)">prev</button>
+                    <button class="btn-des" onclick="moveImg(1)">next</button>
+                </div>
+                <button class="btn-des samp" onclick="currentImg(1)">1</button>
+                <button class="btn-des samp" onclick="currentImg(2)">2</button>
+                <button class="btn-des samp" onclick="currentImg(3)">3</button>
+            </div>
+        </section>
+        
+        
+        <!--
+        <section class="container">
+            <div class="info-wrapper">
+            </div>
+        </section>
+        -->
+
+        <footer class="container">
+            <div class="footer-wrapper">
+                Copyright &copy; 2019 - Basic Website
+            </div>
+        </footer>
+    
+    </main>
+        
+    <script src="js/slider.js"></script>
+</body>
+</html>
